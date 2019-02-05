@@ -2,9 +2,12 @@
 header {
     background-color: @meteor-grey;
     .top-bar {
-        padding: 10px 0;
+        padding: 20px;
         color: @light-color;
         .flex-box(row, wrap, space-between, center);
+        @media @phone {
+            padding: 10px 0;
+        }
         & a {
             color: @light-color;
             text-decoration: none;
@@ -13,9 +16,45 @@ header {
             .menu-btn {
                 font-size: 3rem;
             }
-            nav {
+            .menu-overlay {
                 display: none;
-            }
+                background-color: rgba(26, 30, 39, 0.9);
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                left: 0;
+                top: 0;
+                .modal-menu {
+                    .flex-box();                                      
+                    position: relative;
+                    height: 100%;
+                    nav {
+                        border-radius: 10px;
+                        width: 200px;
+                        .flex-box(column, wrap, center, flex-start);
+                        background-color: @dark-color;
+                        padding: 20px 5px;
+                        a {
+                            color: @light-color;
+                            text-decoration: none;
+                            .font-content();
+                            text-align: left;
+                            line-height: 2.5rem;
+                            padding: 10px 30px;
+                            width: 100%;
+                            border-radius: 10px;
+                            i {
+                                margin-right: 5px;
+                            }
+                            &:hover {
+                                background-color: @dark-indigo;
+                            }
+                        }
+                        
+                    }
+                }
+            } 
         }
     
         .logo {
@@ -29,24 +68,61 @@ header {
         .flex-box();
         
         .app-phone {
-            width: 50%;
+            width: 100%;
+            @media @phone {
+                width: 50%;
+            }
+            
             img {
+                display: none;
                 transform: rotate(-25deg);
                 margin-top: 350px;
                 margin-left: 110px;
+                @media @phone {
+                    display: block;
+                }
             }
         }
         .app-description {
-            width: 50%;
+            width: 100%;
+            padding: 20px;
             text-align: center;
             color: @light-color;
+            @media @phone {
+                width: 50%;
+            }
             h1 {
                 margin: 30px 0;
             }
             img {
+                margin: 10px;
+                @media @phone {
                 margin: 30px 10px;
+                }
             }
         }
 
+    }
+    .sign-bar {
+        .flex-box();
+        background-color: @dark-indigo;
+        color: @light-color;
+        padding: 30px 0;
+        button {
+            background-color: @indigo;
+            border: 1px solid @light-color;
+            color: @light-color;
+            padding: 10px 50px;
+            margin: 20px;
+            border-radius: 5px;
+            @media @phone {
+                margin: 0 20px;
+            }
+            cursor: pointer;
+            &:hover {
+                background-color: @light-color;
+                color: @dark-color;
+            }
+        }
     }
 }
