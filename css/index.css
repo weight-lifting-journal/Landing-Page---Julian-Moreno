@@ -156,6 +156,7 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
+  line-height: 1.8rem;
 }
 .container {
   max-width: 1024px;
@@ -263,6 +264,10 @@ main .testimonials-block .ind-testim .testim-img.img-one {
 }
 main .testimonials-block .ind-testim .testim-img.img-two {
   background-color: #4E5798;
+  background-image: url('../images/testimonial-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 500px) {
   main .testimonials-block .ind-testim .testim-img.img-two {
@@ -271,10 +276,17 @@ main .testimonials-block .ind-testim .testim-img.img-two {
 }
 main .testimonials-block .ind-testim .testim-img.img-three {
   background-color: #4E5798;
+  background-image: url('../images/testimonial-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .testimonials-block .ind-testim .testim-cont {
   width: 100%;
   order: 2;
+  background-color: #2e3141;
+  border-radius: 20px;
+  padding: 50px;
 }
 @media (min-width: 500px) {
   main .testimonials-block .ind-testim .testim-cont {
@@ -407,8 +419,27 @@ main .contact-form form input[type=submit]:hover {
   background-color: #FFFFFF;
   color: #2e3141;
 }
-header {
-  background-color: #2E2F42;
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%;
+  min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header .top-bar {
   padding: 20px;
@@ -479,6 +510,9 @@ header .top-bar .navigation .menu-overlay .modal-menu nav a i {
 header .top-bar .navigation .menu-overlay .modal-menu nav a:hover {
   background-color: #47508F;
 }
+header .top-bar .logo img {
+  max-width: 150px;
+}
 header .hero-image {
   overflow: hidden;
   max-height: 550px;
@@ -528,6 +562,20 @@ header .hero-image .app-description img {
   header .hero-image .app-description img {
     margin: 30px 10px;
   }
+}
+header .hero-image:after {
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 header .sign-bar {
   display: flex;
