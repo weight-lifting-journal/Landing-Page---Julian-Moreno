@@ -175,6 +175,7 @@ p {
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
 }
 main .signup-steps .steps {
+  padding: 50px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -184,9 +185,11 @@ main .signup-steps .steps {
 main .signup-steps .steps .step {
   text-align: center;
   width: 30%;
+  padding: 20px;
 }
 main .signup-steps .steps .step i {
-  font-size: 4rem;
+  font-size: 7rem;
+  margin-bottom: 20px;
 }
 header {
   background-color: #2E2F42;
