@@ -256,7 +256,10 @@ main .testimonials-block .ind-testim .testim-img {
   order: 1;
 }
 main .testimonials-block .ind-testim .testim-img.img-one {
-  background-color: #4E5798;
+  background-image: url('../images/testimonial-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .testimonials-block .ind-testim .testim-img.img-two {
   background-color: #4E5798;
@@ -286,8 +289,16 @@ main .testimonials-block .ind-testim .testim-cont strong {
   font-weight: 700;
 }
 main .faq-block {
+  background: linear-gradient(rgba(71, 80, 131, 0.9), rgba(71, 80, 131, 0.9)), url('../images/gym-machines.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #47508F;
-  padding-bottom: 70px;
+}
+@media (min-width: 500px) {
+  main .faq-block {
+    padding-top: 150px;
+  }
 }
 main .faq-block .faq {
   display: flex;
@@ -317,7 +328,7 @@ main .faq-block .faq .tabs {
 }
 main .faq-block .faq .extra-img {
   width: 100%;
-  padding: 10px;
+  text-align: center;
 }
 @media (min-width: 500px) {
   main .faq-block .faq .extra-img {
@@ -326,6 +337,10 @@ main .faq-block .faq .extra-img {
 }
 main .contact-form {
   padding: 100px 0;
+  background: linear-gradient(rgba(46, 53, 73, 0.9), rgba(46, 53, 73, 0.9)), url('../images/body-bodybuilder.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #2E3549;
 }
 main .contact-form h2 {
