@@ -1,0 +1,141 @@
+.header-about {
+    background: linear-gradient(rgba(46,53,73, 0.6), rgba(46,53,73,0.6)), url('../images/barbell-bodybuilder.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: @dark-purple;
+
+    .hero-image-about {
+        min-height: 60vh;
+        text-align: center;        
+        .flex-box();
+        h1 {
+            font-size: 5rem;    
+            color: @light-color;
+        }
+    }
+    
+}
+
+
+main {
+        .team-block {
+            background-color: @dark-purple;
+            padding: 100px 10px;
+            h2 {
+                text-align: center;
+                color: @light-color;
+                font-size: 3.5rem;
+            }
+        .about-cards {
+            .flex-box();
+                .ind-testim {
+                    width: 100%;
+                    .flex-box(column, wrap, center, center);
+                    color: @light-color;
+                    margin: 40px 10px;
+                    @media @phone {
+                        .flex-box(column, wrap, center, center);
+                        width: 48%;
+                    }
+                    .team-img {
+                        width: 250px;
+                        height: 250px;
+                        border-radius: 50%;
+                        border: 4px solid @dark-indigo;
+                        margin: 20px 20px 0;
+                        z-index: 1;
+
+                        &.julian-a {
+                            background-color: @indigo;
+                            background-image: url('../images/user.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        &.brandon {
+                            background-color: @indigo;
+                            background-image: url('../images/user.png');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+    
+                        }
+                        &.ryan {
+                            background-color: @indigo;
+                            background-image: url('../images/Ryan.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        &.julian-m {
+                            background-color: @indigo;
+                            background-image: url('../images/Julian-M.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        &.megan {
+                            background-color: @indigo;
+                            background-image: url('../images/megan.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        &.bhumi {
+                            background-color: @indigo;
+                            background-image: url('../images/Bhumi.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        &.sean {
+                            background-color: @indigo;
+                            background-image: url('../images/sean.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        &.jonathan {
+                            background-color: @indigo;
+                            background-image: url('../images/Jonathan-Laluces.jpg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                        }
+
+                    }
+                    .team-cont {
+                        width: 100%;
+                        background-color: #2e3141;
+                        border-radius: 20px;
+                        padding: 50px;
+                        z-index: 0;
+                        margin-top: -25px;
+                        text-align: center;
+                        h2 {
+                            margin-bottom: 15px;
+                            text-transform: uppercase;
+                            font-size: 2.5rem;
+                        }
+                        h3 {
+                            margin-bottom: 20px;
+                            font-weight: 300;
+                        }
+                       a {
+                           .font-content();
+                           color: @light-color;
+                           text-decoration: none;
+                           font-size: 2rem;
+                           i {
+                               font-size: 3rem;
+                               margin-right: 5px;
+                           }
+                       }
+                        
+                    }
+                }
+        }
+    }
+}

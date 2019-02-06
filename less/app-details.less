@@ -1,0 +1,67 @@
+.header-app {
+    background: linear-gradient(rgba(46,53,73, 0.6), rgba(46,53,73,0.6)), url('../images/apps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: @dark-purple;
+
+    .hero-image-app {
+        min-height: 60vh;
+        text-align: center;
+        
+        .flex-box();
+        h1 {
+            font-size: 5rem;    
+            color: @light-color;
+        }
+    }
+}
+
+main {
+    .app-block {
+        background-color: @dark-purple;
+        padding: 100px 10px;
+        .app-layout {
+            .flex-box(column, wrap, center, center);
+            
+            @media @phone {
+                .flex-box();
+                padding: 20px;
+            }
+            .app-img {
+                width: 100%;
+                text-align: center;
+                @media @phone {
+                    width: 50%;
+                }
+
+            }
+            .app-content {
+                width: 100%;
+                color: @light-color;
+                h2 {
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+                @media @phone {
+                    width: 50%;
+                    padding: 10px;
+                    
+                  
+                }
+                .logo {
+                    text-align: center;
+                    img {
+                        max-width: 350px;
+                        height: auto;
+                    }
+                    
+                }
+            }
+        }
+  
+    }
+}

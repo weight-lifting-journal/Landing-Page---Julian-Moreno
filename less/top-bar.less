@@ -73,6 +73,16 @@ header {
                                 background-color: @dark-indigo;
                             }
                         }
+                        .links-center {
+                            width: 100%;
+                            border-top: 1px solid @light-color;
+                            margin-top: 10px; 
+                            padding-top: 10px;
+                            .flex-box(row, wrap, space-between, center);
+                            a {
+                                width: 50%;
+                            }
+                        }
                         
                     }
                 }
@@ -90,6 +100,8 @@ header {
         }
         
     }
+
+    //main page
     .hero-image {
         overflow: hidden;
         max-height: 550px;
@@ -139,7 +151,7 @@ header {
         }
 
     }
-    
+    // Video overlay
     .hero-image:after {
         content: '';
         position: absolute;
@@ -154,6 +166,7 @@ header {
         height: 100%;
         z-index: -1;
     }
+    //sign up bar
     .sign-bar {
         .flex-box();
         background-color: @dark-indigo;
