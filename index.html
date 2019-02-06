@@ -7,15 +7,15 @@
     <title>Weight-Lifting Journal</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="js/gloabl.js" async></script>
     <script src="js/faq.js" async></script>
  
 
 </head>
 <body>
- <header>
-     <div class="top-bar container">
+ <header id="home">
+     <div class="top-bar" >
         <div class="navigation">
                 <i class="fas fa-bars menu-btn"></i>
                 
@@ -25,12 +25,12 @@
                         <nav>
                                 <i class="fas fa-times"></i>
                                 <img src="/images/fit-me-logo.png" alt="Fit Me logo">
-                            <a href="#"><i class="fas fa-caret-right"></i> Home</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Testimonials</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> FAQ</a>
-                            <a href="#"><i class="fas fa-caret-right"></i> Contact</a>
-                            <a href="#"><i class="far fa-user"></i> Login</a>
-                            <a href="#"><i class="fas fa-clipboard-list"></i> Sign Up</a>
+                            <a href="#home" class="menu-link"><i class="fas fa-caret-right"></i> Home</a>
+                            <a href="#testimonials" class="menu-link"><i class="fas fa-caret-right"></i> Testimonials</a>
+                            <a href="#faq" class="menu-link"><i class="fas fa-caret-right"></i> FAQ</a>
+                            <a href="#contact" class="menu-link"><i class="fas fa-caret-right"></i> Contact</a>
+                            <a href="#" class="menu-link"><i class="far fa-user"></i> Login</a>
+                            <a href="#" class="menu-link"><i class="fas fa-clipboard-list"></i> Sign Up</a>
                         </nav>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
      </section>
-     <section class="testimonials-block">
+     <section class="testimonials-block" id="testimonials">
         <div class="container">
             <h2><i class="fas fa-signature"></i> Testimonials</h2>
             <div class="ind-testim">
@@ -115,7 +115,8 @@
             </div>
         </div>
      </section>
-     <section class="faq-block">
+     <div data-scroll data-scroll-showCallback="alert('Visible')" data-scroll-hideCallback="alert('Invisible')"></div>
+     <section class="faq-block" id="faq">
          <div class="faq container">
                 <div class="tabs">
                     <h2><i class="fas fa-question"></i> Frequently Asked Questions</h2>
@@ -191,7 +192,7 @@
          </div>
  
      </section>
-     <section class="contact-form">
+     <section class="contact-form" id="contact">
          <h2><i class="far fa-paper-plane"></i> Contact Us</h2>
          <form action="#" class="container">
              <input type="text" name="name" id="" placeholder="Full Name">

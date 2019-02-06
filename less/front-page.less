@@ -15,8 +15,7 @@ main {
             }
             .step {
                 text-align: center;
-                width: 100%;
-                
+                width: 100%;                
                 padding: 20px;
                 @media @phone {
                     width: 30%;
@@ -122,13 +121,19 @@ main {
         .faq {
             .flex-box(column, wrap, center, center);
             color: @light-color;
+            
             @media @phone {
                 .flex-box(row, wrap, center, center);
-
+            }
+            @media @tablet {
+                .flex-box(row, wrap, center, center);
             }
             .tabs {
                 width: 100%;
                 padding: 10px;
+                @media @tablet {
+                   width: 100%;
+                }
                 @media @phone {
                     width: 70%;
                 }
@@ -136,8 +141,12 @@ main {
             .extra-img {
                 width: 100%;
                 text-align: center;
+             
                 @media @phone {
                     width: 30%;
+                }
+                @media @tablet {
+                    width: 100%;
                 }
                
             }

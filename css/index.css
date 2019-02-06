@@ -329,9 +329,23 @@ main .faq-block .faq {
     align-items: center;
   }
 }
+@media (max-width: 800px) {
+  main .faq-block .faq {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 main .faq-block .faq .tabs {
   width: 100%;
   padding: 10px;
+}
+@media (max-width: 800px) {
+  main .faq-block .faq .tabs {
+    width: 100%;
+  }
 }
 @media (min-width: 500px) {
   main .faq-block .faq .tabs {
@@ -345,6 +359,11 @@ main .faq-block .faq .extra-img {
 @media (min-width: 500px) {
   main .faq-block .faq .extra-img {
     width: 30%;
+  }
+}
+@media (max-width: 800px) {
+  main .faq-block .faq .extra-img {
+    width: 100%;
   }
 }
 main .contact-form {
@@ -442,7 +461,11 @@ main .contact-form form input[type=submit]:hover {
   transform: translate(-50%, -50%);
 }
 header .top-bar {
-  padding: 20px;
+  position: fixed;
+  background-color: rgba(26, 30, 39, 0.9);
+  width: 100%;
+  top: 0;
+  z-index: 2;
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
@@ -452,7 +475,12 @@ header .top-bar {
 }
 @media (min-width: 500px) {
   header .top-bar {
-    padding: 10px 0;
+    padding: 5px 50px;
+  }
+}
+@media (max-width: 800px) {
+  header .top-bar {
+    padding: 5px 50px;
   }
 }
 header .top-bar a {
@@ -461,6 +489,7 @@ header .top-bar a {
 }
 header .top-bar .navigation .menu-btn {
   font-size: 3rem;
+  cursor: pointer;
 }
 header .top-bar .navigation .menu-overlay {
   transform: translateY(100%);
@@ -557,6 +586,11 @@ header .hero-image .app-phone img {
     display: block;
   }
 }
+@media (max-width: 800px) {
+  header .hero-image .app-phone img {
+    z-index: 0;
+  }
+}
 header .hero-image .app-description {
   width: 100%;
   padding: 20px;
@@ -566,6 +600,13 @@ header .hero-image .app-description {
 @media (min-width: 500px) {
   header .hero-image .app-description {
     width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  header .hero-image .app-description {
+    width: 50%;
+    z-index: 1;
+    margin-top: 60px;
   }
 }
 header .hero-image .app-description h1 {
