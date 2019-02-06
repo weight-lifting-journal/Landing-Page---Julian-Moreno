@@ -1,0 +1,220 @@
+main {
+    .signup-steps {
+        padding: 100px 0;
+        // background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('../images/backg.jpg');
+        background-image: url('../images/backg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .steps {
+           color: @dark-indigo;
+            
+            .flex-box(column, wrap, center, center);
+            @media @phone {
+                .flex-box();
+            }
+            .step {
+                text-align: center;
+                width: 100%;                
+                padding: 20px;
+                @media @phone {
+                    width: 30%;
+                }
+                
+                i {
+                   color: @indigo;
+                   font-size: 15rem;
+                   margin-bottom: 20px;
+                }
+                h2 {
+                    margin-bottom: 20px;
+                }               
+            }
+        }
+    }
+
+    // Testimonials block
+    .testimonials-block {
+        background-color: @dark-purple;
+        padding: 100px 10px;
+        h2 {
+            text-align: center;
+            color: @light-color;
+        }
+
+        .ind-testim {
+            .flex-box(column, wrap, center, center);
+            color: @light-color;
+            margin: 40px 10px;
+            @media @phone {
+                .flex-box();
+            }
+            .testim-img {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                border: 4px solid @dark-indigo;
+                margin: 20px;
+                order: 1;
+
+                &.img-one {
+                    background-image: url('../images/testimonial-1.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                &.img-two {
+                    background-color: @indigo;
+                    background-image: url('../images/testimonial-2.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+
+                    @media @phone {
+                        order: 2;
+                    }
+                    
+                }
+                &.img-three {
+                    background-color: @indigo;
+                    background-image: url('../images/testimonial-3.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+            }
+            .testim-cont {
+                width: 100%;
+                order: 2;
+                background-color: #2e3141;
+                border-radius: 20px;
+                padding: 50px;
+                @media @phone {
+                    width: 40%;
+
+                }
+                
+                strong {
+                    float: right;
+                    margin-top: 20px;
+                    .font-content(1.2rem, 700);
+                    
+                }
+            }
+        }
+    }
+
+
+    // FAQ  block
+
+    .faq-block {
+        background: linear-gradient(rgba(71, 80, 131, 0.9), rgba(71, 80, 131,0.9)), url('../images/gym-machines.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: @dark-indigo;
+        @media @phone {
+            padding-top: 150px;
+        }
+
+        .faq {
+            .flex-box(column, wrap, center, center);
+            color: @light-color;
+            
+            @media @phone {
+                .flex-box(row, wrap, center, center);
+            }
+            @media @tablet {
+                .flex-box(row, wrap, center, center);
+            }
+            .tabs {
+                width: 100%;
+                padding: 10px;
+                @media @tablet {
+                   width: 100%;
+                }
+                @media @phone {
+                    width: 70%;
+                }
+            }
+            .extra-img {
+                width: 100%;
+                text-align: center;
+             
+                @media @phone {
+                    width: 30%;
+                }
+                @media @tablet {
+                    width: 100%;
+                }
+               
+            }
+        }
+    }
+    
+
+    // Contact Form
+
+    .contact-form {
+        padding: 100px 0;
+        background: linear-gradient(rgba(46,53,73, 0.9), rgba(46,53,73,0.9)), url('../images/body-bodybuilder.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: @dark-purple;
+     
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: @light-color;
+        }
+        form {
+            .flex-box(column, wrap, center, center);
+            width: 100%;
+            padding: 20px;
+             
+            @media @phone {
+                .flex-box();
+                max-width: 750px;
+            }
+            input {
+                .font-content();
+                margin: 10px;
+                width: 100%;
+                color: @dark-indigo;
+                padding: 20px;
+                border-radius: 5px;
+                border: 1px solid @indigo;
+                @media @phone {
+                    width: 45%;
+                }
+            }
+            textarea {
+                .font-content();
+                margin: 20px 0;
+                width: 100%;
+                color: @dark-indigo;
+                padding: 20px;
+                border-radius: 5px;
+                border: 1px solid @indigo;
+            }
+            input[type=submit] {
+                background-color: @indigo;
+                border: 1px solid @dark-indigo;
+                color: @light-color;
+                padding: 10px 50px;
+                margin: 0 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                &:hover {
+                    background-color: @light-color;
+                    color: @dark-color;
+                }
+            }
+        }
+        
+    }
+
+}
+

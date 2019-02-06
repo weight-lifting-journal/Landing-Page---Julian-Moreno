@@ -1,0 +1,55 @@
+.tabs {
+    margin-top: 95px;
+
+  h2 {
+    text-align: center;
+  }  
+
+  .tab {
+    margin: 10px;
+    padding: 0 20px 25px;
+    border: 1px solid @light-color;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    color: @light-color;
+    @media @phone {
+      margin: 20px 10%;
+    }
+  
+    h3 {
+      padding: 0;
+      margin: 15px 0 30px;
+    }
+   
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: @dark-color;
+    }
+  
+    .expandButton {
+      font-size: 2rem;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      color: @light-color;
+      cursor: pointer;
+      padding: 15px 5px 15px 15px;
+
+      .fa-angle-up {
+        color: @dark-color;
+      }
+    }
+    
+  }
+  
+  .tab-open {
+    height: auto;
+    background-color: @light-color;
+    color: @dark-color;
+    padding-bottom: 50px;
+  }
+
+} 

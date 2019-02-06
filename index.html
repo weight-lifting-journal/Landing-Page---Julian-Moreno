@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight-Lifting Journal</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/gloabl.js" async></script>
+    <script src="js/faq.js" async></script>
+</head>
+<body>
+ <header id="home">
+     <div class="top-bar" >
+        <div class="navigation">
+            <i class="fas fa-bars menu-btn"></i>                
+            <div class="menu-overlay">
+                <div class="modal-menu">                            
+                    <nav>
+                        <i class="fas fa-times"></i>
+                        <a href="index.html"><img src="/images/fit-me-logo.png" alt="Fit Me logo"></a>
+                        <a href="#home" class="menu-link"><i class="fas fa-caret-right"></i> Home</a>
+                        <a href="about-us.html" class="menu-link"><i class="fas fa-caret-right"></i> About Us</a>
+                        <a href="app-details.html" class="menu-link"><i class="fas fa-caret-right"></i> App Features</a>
+                        <a href="#testimonials" class="menu-link"><i class="fas fa-caret-right"></i> Testimonials</a>
+                        <a href="#faq" class="menu-link"><i class="fas fa-caret-right"></i> FAQ</a>
+                        <a href="#contact" class="menu-link"><i class="fas fa-caret-right"></i> Contact Us</a>
+                        <div class="links-center"><a href="#" class="menu-link"><i class="far fa-user"></i> Login</a> <a href="#" class="menu-link"><i class="fas fa-clipboard-list"></i> Sign Up</a></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+                <a href="index.html"><img src="/images/fit-me-logo.png" alt="Fit Me logo"></a>
+        </div>
+    </div>
+    <div class="hero-image container">
+            <div class="video-container">
+                <video autoplay loop="true" width="1280" height="720">
+                    <source type="video/webm" src="images/weightlifting.webm">
+                    <source type="video/mp4" src="images/weightlifting.mp4">
+                </video>
+            </div>
+        <div class="app-phone">
+            <img src="images/phone.png" alt="Phone image">
+        </div>
+        <div class="app-description">
+            <h1>Fit Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis voluptatum facilis deserunt sed molestias saepe esse nulla reiciendis. Recusandae velit vel eaque quae fugit. Labore sint doloribus ab ad quasi.</p>
+            <img src="/images/appale-button.png" alt="Apple Store - Button">
+            <img src="images/google-play-button.png" alt="Google Play - Button">
+        </div>
+    </div>
+    <div class="sign-bar">
+        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+        <button>Sign Up!</button>
+    </div>
+</header>
+ <main>
+     <section class="signup-steps ">
+            <div class="steps container">
+                    <div class="step">
+                        <i class="far fa-id-card"></i>
+                        <h2>Step 1</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error modi perferendis laboriosam a architecto ipsam.</p>
+                    </div>
+                    <div class="step">
+                        <i class="far fa-calendar-alt"></i>
+                        <h2>Step 2</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error modi perferendis laboriosam a architecto ipsam.</p>
+                    </div>
+                    <div class="step">
+                        <i class="far fa-clock"></i>
+                        <h2>Step 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error modi perferendis laboriosam a architecto ipsam.</p>
+                    </div>
+                </div>
+     </section>
+     <section class="testimonials-block" id="testimonials">
+        <div class="container">
+            <h2><i class="fas fa-signature"></i> Testimonials</h2>
+            <div class="ind-testim">
+                <div class="testim-img img-one">
+                    
+                </div>
+                <div class="testim-cont">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt sequi possimus nam quos autem expedita, sunt qui similique animi repudiandae doloribus ipsam provident amet consequuntur accusantium beatae aspernatur. Nobis.</p>
+                    <strong>~ Name testimonial</strong>
+                </div>
+            </div>
+            <hr class="hr-style">
+            <div class="ind-testim">
+                <div class="testim-cont">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt sequi possimus nam quos autem expedita, sunt qui similique animi repudiandae doloribus ipsam provident amet consequuntur accusantium beatae aspernatur. Nobis.</p>
+                        <strong>~ Name testimonial</strong>    
+                </div>
+                <div class="testim-img img-two">
+                    
+                </div>
+            </div>
+            <hr class="hr-style">
+            <div class="ind-testim">
+                <div class="testim-img img-three">
+                    
+                </div>
+                <div class="testim-cont">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt sequi possimus nam quos autem expedita, sunt qui similique animi repudiandae doloribus ipsam provident amet consequuntur accusantium beatae aspernatur. Nobis.</p>
+                        <strong>~ Name testimonial</strong>
+                </div>
+            </div>
+        </div>
+     </section>
+     <div data-scroll data-scroll-showCallback="alert('Visible')" data-scroll-hideCallback="alert('Invisible')"></div>
+     <section class="faq-block" id="faq">
+         <div class="faq container">
+                <div class="tabs">
+                    <h2><i class="fas fa-question"></i> Frequently Asked Questions</h2>
+                    <div class="tab">
+                        <h3>Lucas ipsum dolor sit amet ben twi'lek?</h3>
+                       <p>Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
+                        moff wicket tatooine luke. Solo wampa wampa calrissian yoda moff. Darth grievous darth gonk darth hutt. Darth baba skywalker
+                        watto fett jango maul han. Mon ewok sidious sidious lando kenobi grievous gamorrean solo. Yoda wedge utapau darth calamari.
+                        Hutt calamari darth jabba. Darth dooku amidala organa moff. Boba darth binks solo hutt skywalker dantooine skywalker. Qui-gonn
+                        jar twi'lek jinn leia jango skywalker mon. </p>
+                
+                <span class='expandButton'></span>
+                    </div>
+                    <div class="tab">
+                        <h3>Lucas ipsum dolor sit amet ben twi'lek?</h3>
+                        <p>Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
+                        Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
+                        snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
+                        yew pumpkin juice phials Ravenclaw’s Diadem 10 galleons Thieves Downfall. Ministry-of-Magic mimubulus mimbletonia Pigwidgeon
+                        knut phoenix feather other minister Azkaban. Hedwig Daily Prophet treacle tart full-moon Ollivanders You-Know-Who cursed.
+                        Fawkes maze raw-steak Voldemort Goblin Wars snitch Forbidden forest grindylows wool socks.</p>
+                    
+                       <span class='expandButton'></span>
+                    </div>
+                    <div class="tab">
+                        <h3>Lucas ipsum dolor sit amet ben twi'lek?</h3>
+                       
+                        <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                
+                        
+                        <span class='expandButton'></span>
+                    </div>
+                    <div class="tab">
+                        <h3>Lucas ipsum dolor sit amet ben twi'lek?</h3>
+                        <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.</p>
+                        
+                        <span class='expandButton'></span>
+                    </div>
+                    <div class="tab">
+                        <h3>Lucas ipsum dolor sit amet ben twi'lek?</h3>
+                       
+                        <p>Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Squirtle Lorem ipsum dolor sit amet, consectetur adipiscing elit. Wartortle Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. Blastoise Lorem ipsum dolor sit amet, consectetur adipiscing elit. Caterpie Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Metapod Lorem ipsum dolor sit amet, consectetur adipiscing elit. Butterfree
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Weedle Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Kakuna Lorem ipsum dolor sit amet, consectetur adipiscing elit. Beedrill Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                        <span class='expandButton'></span>
+                    </div>
+                </div>
+                <div class="extra-img">
+                     <img src="images/adult-biceps.png" alt="Weight Lifting"> 
+                </div>
+         </div>
+ 
+     </section>
+     <section class="contact-form" id="contact">
+         <h2><i class="far fa-paper-plane"></i> Contact Us</h2>
+         <form action="#" class="container">
+             <input type="text" name="name" id="" placeholder="Full Name">
+             <input type="email" name="email" id="" placeholder="Email">
+             <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+             <input type="submit" value="submit">
+         </form>
+     </section>
+ </main>
+ <footer>
+     <div class="social-media container">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+     </div>
+     <h6>&copy; 2019<br>All Rights Reserved</h6>
+ </footer>
+</body>
+</html>
