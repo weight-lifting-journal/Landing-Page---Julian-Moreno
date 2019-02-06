@@ -17,7 +17,7 @@ header {
                 font-size: 3rem;
             }
             .menu-overlay {
-                display: none;
+                transform:translateY(100%);
                 background-color: rgba(26, 30, 39, 0.9);
                 position: fixed;
                 width: 100%;
@@ -29,12 +29,26 @@ header {
                     .flex-box();                                      
                     position: relative;
                     height: 100%;
+                    
                     nav {
                         border-radius: 10px;
-                        width: 200px;
+                        width: 250px;
                         .flex-box(column, wrap, center, flex-start);
                         background-color: @dark-color;
                         padding: 20px 5px;
+                        -webkit-box-shadow: 2px 2px 5px 1px #19002E;
+                        box-shadow: 2px 2px 5px 1px #19002E;
+                        .fa-times {
+                            font-size: 3rem;
+                            margin: 10px;
+                            cursor: pointer;
+                        }
+                        img {
+                            margin: 0 auto;
+                            max-width: 150px;
+                            width: 100%;
+                            height: auto;
+                        }
                         a {
                             color: @light-color;
                             text-decoration: none;
@@ -55,6 +69,9 @@ header {
                     }
                 }
             } 
+            .drop-menu {
+                transform: translateY(0%);
+            }
         }
 
         .logo {
