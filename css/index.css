@@ -745,7 +745,7 @@ header .top-bar .navigation .menu-btn {
   cursor: pointer;
 }
 header .top-bar .navigation .menu-overlay {
-  transform: translateY(100%);
+  transform: translateY(130%);
   background-color: rgba(26, 30, 39, 0.9);
   position: fixed;
   width: 100%;
@@ -849,7 +849,7 @@ header .hero-image .app-phone {
 header .hero-image .app-phone img {
   display: none;
   transform: rotate(-25deg);
-  margin-top: 350px;
+  margin-top: 220px;
   margin-left: 110px;
 }
 @media (min-width: 500px) {
@@ -867,6 +867,7 @@ header .hero-image .app-description {
   padding: 20px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 50px;
 }
 @media (min-width: 500px) {
   header .hero-image .app-description {
