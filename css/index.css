@@ -133,29 +133,29 @@ html {
   font-size: 62.5%;
 }
 h1 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 3.2rem;
   font-weight: 700;
 }
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
 }
 h3 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 2rem;
   font-weight: 700;
 }
 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.8rem;
 }
 .container {
@@ -167,22 +167,22 @@ p {
   margin: 0 auto;
 }
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Lato';
   font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdr.ttf) format('truetype');
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 main .signup-steps {
   padding: 100px 0;
@@ -300,7 +300,7 @@ main .testimonials-block .ind-testim .testim-cont {
 main .testimonials-block .ind-testim .testim-cont strong {
   float: right;
   margin-top: 20px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -403,7 +403,7 @@ main .contact-form form {
   }
 }
 main .contact-form form input {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   margin: 10px;
@@ -419,7 +419,7 @@ main .contact-form form input {
   }
 }
 main .contact-form form textarea {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   margin: 20px 0;
@@ -582,7 +582,7 @@ main .team-block .about-cards .ind-testim .team-cont h3 {
   font-weight: 300;
 }
 main .team-block .about-cards .ind-testim .team-cont a {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   color: #FFFFFF;
@@ -766,7 +766,7 @@ header .top-bar .navigation .menu-overlay .modal-menu nav img {
 header .top-bar .navigation .menu-overlay .modal-menu nav a {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   text-align: left;
@@ -794,9 +794,13 @@ header .top-bar .navigation .menu-overlay .modal-menu nav .links-center {
 }
 header .top-bar .navigation .menu-overlay .modal-menu nav .links-center a {
   width: 50%;
+  text-align: center;
 }
 header .top-bar .navigation .drop-menu {
   transform: translateY(0%);
+}
+header .top-bar .logo {
+  text-align: center;
 }
 header .top-bar .logo img {
   max-width: 150px;
