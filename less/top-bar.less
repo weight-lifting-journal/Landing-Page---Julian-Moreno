@@ -5,6 +5,7 @@ header {
         position: fixed;
         background-color: rgba(26, 30, 39, 0.9);
         width: 100%;
+        padding: 5px 50px;
         top: 0;
         z-index: 2;
         color: @light-color;
@@ -44,8 +45,8 @@ header {
                         .flex-box(column, wrap, center, flex-start);
                         background-color: @dark-color;
                         padding: 20px 5px;
-                        -webkit-box-shadow: 2px 2px 5px 1px #19002E;
-                        box-shadow: 2px 2px 5px 1px #19002E;
+                        -webkit-box-shadow: 2px 2px 5px 1px rgb(35, 29, 41);
+                        box-shadow: 2px 2px 5px 1px rgb(35, 29, 41);
                         .fa-times {
                             font-size: 3rem;
                             margin: 10px;
@@ -171,18 +172,24 @@ header {
     }
     //sign up bar
     .sign-bar {
+        border-top: 3px solid @dark-color;
+        // border-bottom: 3px solid @dark-color;
         .flex-box();
         background-color: @dark-indigo;
         color: @light-color;
         padding: 30px 0;
         button {
-            background-color: @indigo;
-            border: 1px solid @light-color;
+            background-color: @dark-color;
+            // border: 1px solid @light-color;
+            border: none;
             color: @light-color;
             padding: 10px 50px;
             margin: 20px;
             border-radius: 5px;
             @media @phone {
+                margin: 10px 20px;
+            }
+            @media @tablet {
                 margin: 0 20px;
             }
             cursor: pointer;

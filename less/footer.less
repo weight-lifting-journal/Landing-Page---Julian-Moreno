@@ -6,13 +6,16 @@ footer {
         max-width: 350px;
         font-size: 3rem;
         color: @light-color;
-        .flex-box(column, wrap, center, center);
+        .flex-box();
         i {
             margin: 10px;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
-        @media @phone {
-            .flex-box(row, wrap, space-around, center);
-        }
+      
     }
     h6 {
         margin-top: 20px;

@@ -18,6 +18,9 @@ main {
                 width: 100%;                
                 padding: 20px;
                 @media @phone {
+                    width: 100%;
+                }
+                @media @tablet {
                     width: 30%;
                 }
                 
@@ -71,9 +74,11 @@ main {
                     background-position: center;
 
                     @media @phone {
+                        order: 1;
+                    }
+                    @media @tablet {
                         order: 2;
                     }
-                    
                 }
                 &.img-three {
                     background-color: @indigo;
@@ -91,10 +96,12 @@ main {
                 border-radius: 20px;
                 padding: 50px;
                 @media @phone {
-                    width: 40%;
+                    width: 100%;
 
                 }
-                
+                @media @tablet {
+                    width: 60%;
+                }
                 strong {
                     float: right;
                     margin-top: 20px;
@@ -114,40 +121,44 @@ main {
         background-size: cover;
         background-attachment: fixed;
         background-color: @dark-indigo;
-        @media @phone {
-            padding-top: 150px;
-        }
+    
 
         .faq {
             .flex-box(column, wrap, center, center);
             color: @light-color;
             
             @media @phone {
-                .flex-box(row, wrap, center, center);
+                .flex-box(column, wrap, center, center);
             }
             @media @tablet {
-                .flex-box(row, wrap, center, center);
+                .flex-box(row, wrap, center, flex-end);
             }
             .tabs {
                 width: 100%;
-                padding: 10px;
-                @media @tablet {
-                   width: 100%;
-                }
+                // padding: 10px;
+                
                 @media @phone {
-                    width: 70%;
+                    width: 100%;
+                }
+
+                @media @tablet {
+                    width: 60%
                 }
             }
             .extra-img {
                 width: 100%;
                 text-align: center;
-             
                 @media @phone {
-                    width: 30%;
+                    width: 60%;
                 }
                 @media @tablet {
-                    width: 100%;
+                    width: 40%;
                 }
+                
+                img {
+                    width: 100%;
+                    height: auto;
+                }    
                
             }
         }
